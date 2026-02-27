@@ -1,0 +1,7 @@
+{
+  "name": "SI RAMA",
+  "description": "Sahabat AI yang menemani Ramadhanmu. Merawat ibadah dan menjaga energi bersama RAMA.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

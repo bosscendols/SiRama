@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SI RAMA: Sahabat AI Ramadhanmu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --sage: #7a9482;
+      --sage-dark: #5a7362;
+      --sage-light: #f0f4f1;
+      --ivory: #fcfaf2;
+      --gold: #eab308;
+    }
+    body {
+      font-family: 'Plus+Jakarta+Sans', sans-serif;
+      background-color: var(--sage-light);
+      color: #1e293b;
+      -webkit-font-smoothing: antialiased;
+    }
+    .font-arabic {
+      font-family: 'Amiri', serif;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    .bento-card {
+      background: white;
+      border: 1px solid rgba(122, 148, 130, 0.15);
+      box-shadow: 0 10px 30px -10px rgba(122, 148, 130, 0.1);
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .bento-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px -15px rgba(122, 148, 130, 0.2);
+    }
+    .sage-gradient {
+      background: linear-gradient(135deg, #7a9482 0%, #5a7362 100%);
+    }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    .animate-float { animation: float 5s ease-in-out infinite; }
+
+    /* Custom Scrollbar for non-mobile */
+    @media (min-width: 768px) {
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--sage-light);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--sage);
+      }
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
